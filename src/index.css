@@ -1,13 +1,108 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.searchPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.searchBox {
+  margin: 15px auto;
+  width: 450px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #a2a2a2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.searchIcon {
+  margin-left: 5px;
+  color: #4e4e4e;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  height: 15px;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.searchResultBox {
+  border: 1px solid #c3c3c3;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  margin: 0 20px;
+  max-height: 255px;
+  overflow: scroll;
+}
+
+.searchResultItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  margin: 0 8px;
+  padding: 6px;
+}
+
+.searchResultItem:not(:last-child) {
+  border-bottom: 0.1px solid #e0e0e0;
+}
+
+.searchResultItem img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.searchResultDescription span {
+  display: block;
+  margin: 0;
+  padding: 2px 0;
+}
+
+.resultTitle {
+  font-size: 14px;
+}
+
+.resultSubtitle {
+  font-size: 11px;
+  color: #6e6e6e;
+}
+
+.errorMessage {
+  display: block;
+  margin: 0 8px;
+  padding: 6px;
+  font-style: italic;
 }
